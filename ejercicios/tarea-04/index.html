@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4 - Operaciones</title>
+</head>
+
+<body>
+
+    <h1>Tarea 4</h1>
+    <h2>Operaciones con dos números</h2>
+
+    <script>
+        // Solicitar al usuario los dos números
+        let numero1 = parseFloat(prompt("Ingrese el primer número:"));
+        let numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+        // Bucle de 5 iteraciones
+        for (let i = 1; i <= 5; i++) {
+
+            let resultado;
+
+            if (i === 1) {
+                resultado = numero1 + numero2;
+                document.write("<p>1. SUMA: " + numero1 + " + " + numero2 + " = " + resultado + "</p>");
+            }
+
+            else if (i === 2) {
+                resultado = numero1 - numero2;
+                document.write("<p>2. RESTA: " + numero1 + " - " + numero2 + " = " + resultado + "</p>");
+            }
+
+            else if (i === 3) {
+                resultado = numero1 * numero2;
+                document.write("<p>3. MULTIPLICACIÓN: " + numero1 + " × " + numero2 + " = " + resultado + "</p>");
+            }
+
+            else if (i === 4) {
+                resultado = numero1 / numero2;
+                document.write("<p>4. DIVISIÓN: " + numero1 + " / " + numero2 + " = " + resultado + "</p>");
+            }
+
+            else if (i === 5) {
+                resultado = numero1 % numero2;
+                document.write("<p>5. MÓDULO: " + numero1 + " % " + numero2 + " = " + resultado + "</p>");
+            }
+        }
+    </script>
+
+</body>
+</html>
