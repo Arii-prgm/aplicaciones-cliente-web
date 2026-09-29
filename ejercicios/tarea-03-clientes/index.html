@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro de Clientes</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Registro de Clientes</h1>
+        <p class="descripcion">
+            Ingrese los datos del cliente
+        </p>
+
+        <form id="formularioClientes">
+
+            <div class="campo">
+                <label for="cedula">Cédula</label>
+                <input
+                    type="text"
+                    id="cedula"
+                    maxlength="10"
+                    placeholder="Ingrese 10 dígitos"
+                >
+                <span class="error" id="errorCedula"></span>
+            </div>
+
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    maxlength="30"
+                    placeholder="Ingrese el nombre"
+                >
+                <span class="error" id="errorNombre"></span>
+            </div>
+
+            <div class="campo">
+                <label for="direccion">Dirección</label>
+                <input
+                    type="text"
+                    id="direccion"
+                    maxlength="50"
+                    placeholder="Ingrese la dirección"
+                >
+                <span class="error" id="errorDireccion"></span>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono celular</label>
+                <input
+                    type="text"
+                    id="telefono"
+                    maxlength="10"
+                    placeholder="Ingrese 10 dígitos"
+                >
+                <span class="error" id="errorTelefono"></span>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="ejemplo@correo.com"
+                >
+                <span class="error" id="errorCorreo"></span>
+            </div>
+
+            <button type="submit">
+                Guardar cliente
+            </button>
+
+        </form>
+
+        <div id="mensajeExito"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
